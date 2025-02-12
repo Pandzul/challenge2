@@ -17,11 +17,20 @@ const Home = () => {
     <div>
       {/* About Section */}
       <section id="about" className="py-16 bg-gray-100">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-lg text-gray-700">
-            Hi, I’m a passionate web developer with experience in building modern and responsive web applications. I love learning new technologies and improving my skills every day.
-          </p>
+        <div className="container mx-auto flex flex-col md:flex-row items-center">
+          <div className="md:w-1/3">
+            <img
+              src="https://via.placeholder.com/300" // Ganti dengan URL foto profil kamu
+              alt="Profile"
+              className="w-64 h-64 rounded-full mx-auto mb-6 md:mb-0 object-cover shadow-lg"
+            />
+          </div>
+          <div className="md:w-2/3 text-center md:text-left">
+            <h2 className="text-4xl font-bold mb-4">About Me</h2>
+            <p className="text-lg text-gray-700">
+              Hi, perkenalkan nama saya adalah <strong>Panji Arif Maulana</strong>. Saya adalah mahasiswa semester 4 di Ma'soem University. Sekarang saya sedang belajar pemrograman mobile.
+            </p>
+          </div>
         </div>
       </section>
 
