@@ -20,7 +20,7 @@ const Home = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/3">
             <img
-              src="https://via.placeholder.com/300" // Ganti dengan URL foto profil kamu
+              src="/pp.jpg" // Ganti dengan URL foto profil kamu
               alt="Profile"
               className="w-64 h-64 rounded-full mx-auto mb-6 md:mb-0 object-cover shadow-lg"
             />
