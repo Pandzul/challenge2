@@ -26,22 +26,26 @@ const Home = () => {
 
   return (
     <div>
-      {/* Header Navigation */}
-      <header className="bg-blue-600 text-white p-4 shadow-md sticky top-0 z-50">
-        <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="hover:text-gray-300">My Portfolio</Link>
-          <nav className="hidden md:flex space-x-6">
-            <Link href="/about" className="hover:text-gray-300">About</Link>
-            <Link href="/skills" className="hover:text-gray-300">Skills</Link>
-            <Link href="/services" className="hover:text-gray-300">Services</Link>
-            <Link href="/portofolio" className="hover:text-gray-300">Portofolio</Link>
-            <Link href="/contact" className="hover:text-gray-300">Contact</Link>
-          </nav>
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button onClick={toggleMenu} className="focus:outline-none">
-              {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-            </button>
+      {/* About Section */}
+      <section id="about" className="py-16 bg-gray-100">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">About Me</h2>
+          <p className="text-lg text-gray-700">
+            Hi, I’m a passionate web developer with experience in building modern and responsive web applications. I love learning new technologies and improving my skills every day.
+          </p>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8">Skills</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {skills.map((skill, index) => (
+              <span key={index} className="px-4 py-2 bg-gray-200 rounded-lg text-gray-800">
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
         {/* Mobile Menu */}
